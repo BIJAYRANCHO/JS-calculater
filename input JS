@@ -1,0 +1,253 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input JS</title>
+</head>
+<body>
+    <h2>
+    Enter any number : <input id="no_input" placeholder="num."> 
+	</h2>
+    <br>
+    <button onclick="enter_input()">Click Me</button>
+
+</body>
+<script>
+    function enter_input()
+    {
+        var no;
+        no = Number(document.getElementById("no_input").value);
+        alert("your input number is " + no);
+    }
+</script>
+</html>  -->
+
+
+<!-- // Calculater -->
+<!-- 
+<html> 
+<head> 
+	<script> 
+		function dis(val) 
+		{ 
+			document.getElementById("result").value+=val ;
+		} 
+		
+		
+		function solve() 
+		{ 
+			var x = document.getElementById("result").value; 
+			var y = eval(x) ;
+			document.getElementById("result").value = y ;
+		} 
+		
+		function clr() 
+		{ 
+			document.getElementById("result").value = "" ;
+		} 
+	</script> 
+	
+	<style> 
+
+
+		.title{ 
+		margin-bottom: 10px; 
+		text-align:center; 
+		width: 220px; 
+		color:green; 
+		border: solid black 2px; 
+		} 
+
+		input[type="button"] 
+		{ 
+		background-color:orange; 
+		color: black; 
+		border: solid black 2px; 
+		width:100% 
+		} 
+
+		input[type="text"] 
+		{ 
+		background-color:white; 
+		border: solid black 2px; 
+		width:100% 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class = title >Simple Calculator</div> 
+	<table border="1"> 
+		<tr> 
+			<td colspan="3"><input type="text" id="result"/></td> 
+
+			<td><input type="button" value="c" onclick="clr()"/> </td> 
+		</tr> 
+		<tr> 
+			
+			<td><input type="button" value="1" onclick="dis('1')"/> </td> 
+			<td><input type="button" value="2" onclick="dis('2')"/> </td> 
+			<td><input type="button" value="3" onclick="dis('3')"/> </td> 
+			<td><input type="button" value="/" onclick="dis('/')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="dis('4')"/> </td> 
+			<td><input type="button" value="5" onclick="dis('5')"/> </td> 
+			<td><input type="button" value="6" onclick="dis('6')"/> </td> 
+			<td><input type="button" value="-" onclick="dis('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="dis('7')"/> </td> 
+			<td><input type="button" value="8" onclick="dis('8')"/> </td> 
+			<td><input type="button" value="9" onclick="dis('9')"/> </td> 
+			<td><input type="button" value="+" onclick="dis('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick="dis('.')"/> </td> 
+			<td><input type="button" value="0" onclick="dis('0')"/> </td> 
+			
+			<td><input type="button" value="=" onclick="solve()"/> </td> 
+			<td><input type="button" value="*" onclick="dis('*')"/> </td> 
+		</tr> 
+	</table> 
+</body> 
+</html>  -->
+
+
+ <!-- even or odd -->
+
+<!-- <!doctype html>
+<html>
+<head>
+<script>
+function odd_even(){
+var no;
+no=Number(document.getElementById("no_input").value);
+if(no%2==0)
+{
+alert("Even Number");
+}
+else
+{
+alert("Odd Number");
+}
+}
+</script>
+</head>
+<body>
+Enter Any Number:<input id="no_input"><br />
+<button onclick="odd_even()">Click me</button>
+</body>
+</html> -->
+
+<!-- prime or not -->
+
+<!-- <!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		Check a number is Prime or 
+		not using JavaScript 
+	</title> 
+	
+	<script type="text/javascript"> 
+	
+		function p() { 
+			
+			var n, i, flag = true; 
+			
+			n = document.getElementById("myform").n.value; 
+			n = parseInt(n) 
+			for(i = 2; i <= n - 1; i++) 
+				if (n % i == 0) { 
+					flag = false; 
+					break; 
+				} 
+				
+			if (flag == true) 
+				alert(n + " is prime"); 
+			else
+				alert(n + " is not prime"); 
+		} 
+	</script> 
+</head> 
+
+<body> 
+	<center> 
+		<h1>prime or not</h1> 
+		
+		
+		<hr color="Green"> 
+		
+		<form id="myform"> 
+			Enter the number: 
+			<input type="text" name=n value=""> 
+			
+			<br><br> 
+			
+			<input type="button" value="Check" onClick="p()"> 
+			<br> 
+		</form> 
+	</center> 
+</body> 
+
+</html> 
+ -->
+
+
+<!-- leap year -->
+
+<!-- <!DOCTYPE>
+<html>
+<head>
+<script>
+	function check_leapyear(){
+		var year;
+ 
+		year = document.getElementById("year").value;
+ 
+		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
+		{
+			alert(year+" is a leap year");  
+		}
+		else
+		{
+			alert(year+" is not a leap year");  
+		}
+	}
+</script>
+</head>
+<body>
+<h3>Javascript Program to find leap year</h3>
+<input type="text" id="year"></input>
+<button onclick="check_leapyear()">Check</button>
+</body>
+</html>
+ -->
+
+
+<!-- input prompt	 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input prompt</title>
+</head>
+<body>
+	<h2>Landing Page</h2>
+	<button onclick="myFunc()">Click me </button>
+	<h3 id="demo"></h3>
+
+</body>
+<script type="text/javascript">
+	myFunc()
+	{
+		var person = prompt("Please enter your name ", "FIEM");
+		if(person != null){
+			document.getElementById("demo").innerHTML = "Hello "+ person + "!How are you today?"
+		}
+	}
+</script>
+</html>
